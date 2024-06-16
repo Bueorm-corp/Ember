@@ -22,5 +22,5 @@ class EmberClient:
             raise ValueError(f"Provider {self.provider} not supported")
         self.model.load(model_name, **params)
 
-def client(provider, api_key, **kwargs):
-    return EmberClient(provider, api_key)
+    def client(provider, api_key, **kwargs):
+        return EmberClient(provider, api_key)
