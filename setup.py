@@ -1,23 +1,20 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
-    name="Ember",
+    name="ember",
     version="0.0.1",
-    packages=find_packages(),
-    package_data={
-        'Ember': ['*.h5'],
-    },
-    install_requires=[
-        'tensorflow>=2.0.0'
-    ],
+    description="A unified interface for multiple AI model providers",
     author="Bueorm",
     author_email="support.bueorm@proton.me",
-    description="Una librería para cargar y utilizar modelos de inteligencia artificial (echos por Bueorm)",
-    long_description=open("README.md").read(),
-    long_description_content_type="text/markdown",
-    url="https://github.com/tuusuario/ember",
+    url="https://github.com/BueormLLC/Ember",
+    packages=find_packages(),
+    install_requires=[
+        "openai", 
+        "google-generativeai",
+        "Pillow",
+        "cohere",
+        "anthropic",
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
