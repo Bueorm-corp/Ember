@@ -1,4 +1,20 @@
-Ember is an exquisite Python library that presents a unified interface for interacting with multiple artificial intelligence model services, including prominent names like OpenAI, Google, Anthropic, and Cohere. With Ember, developers can effortlessly harness the power of these cutting-edge AI services, streamlining their projects and elevating their creations to new heights.
+#EMBER
+###Ember is a library to load and use BueormLLC models in a more efficient and simple way
 
+##Install library
 ```bash
 pip install ember
+```
+
+##Use Library
+```python
+import ember
+from ember import Ember, Predict
+
+tokenizer = Ember.load_tokenizer('LDM-base')
+model = Ember.load_model('LDM-base')
+
+text = 'texto de ejemplo'
+predict = Predict(model, tokenizer, text)
+print(predict)
+```
