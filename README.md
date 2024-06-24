@@ -1,12 +1,13 @@
-#EMBER
-###Ember is a library to load and use BueormLLC models in a more efficient and simple way
+**EMBER**
 
-##Install library
+#Ember is a library to load and use BueormLLC models in a more efficient and simple way
+
+**Install library**
 ```bash
 pip install ember
 ```
 
-##Use Library
+**Use Library**
 ```python
 import ember
 from ember import Ember, Predict
