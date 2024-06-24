@@ -22,5 +22,3 @@ text = 'texto de ejemplo'
 predict = Predict(model, tokenizer, text)
 print(predict)
 ```
-```bash
-pip install .
